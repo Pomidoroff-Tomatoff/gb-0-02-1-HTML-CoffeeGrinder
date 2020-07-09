@@ -1,2 +1,16 @@
-# gb-0-02-1-HTML-CoffeeGrinder
-GeekBrains HTML introduction
+gb-0-02-1-HTML-CoffeeGrinder
+# GeekBrains HTML/CSS интерактивный курс
+Преподаватель: Алексей Кадочников 
+part-1
+
+###Lesson-1
+Основные понятия в веб-разработке
+- Редактор кода Brackets
+- Структура HTML
+- Виды тегов
+- Арибуты тегов
+
+
+
+
+
