@@ -1,0 +1,75 @@
+html {
+    background-color: #e6e9e9;
+}
+
+body {
+    background: #f8f8f8ff;
+    max-width: 800px;
+    min-width: 50px;
+    margin: 0 auto;
+    padding: 2em 2em 4em;
+}
+
+
+#varShortListPicture {
+    background-color: magenta;
+    width: 100px;
+    border-color: silver;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.ShortListPicture {
+    /*background-color: silver; */
+    width: 200px;
+    border-color: silver;
+    border-width: 10px;
+    border-style: dashed;
+    
+}
+
+img[title="mouse"] {
+    width: 60px;
+}
+
+.center-text {
+    text-align: center;
+    height: 200px;
+    width: 300px;
+    overflow: auto;
+    background-color: yellow;
+}
+
+.text-border {
+    border-width: 3px;
+    border-color: silver;
+    border-style: dashed;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+}
+.TextInfo {
+    text-align: center;
+    text-decoration: wavy;
+    background-color: cyan;
+}
+
+li:after{
+    content: "new";
+    color: red;
+}
+
+
+/*
+p {
+    height: 300px;
+    width: 500px;
+    overflow: auto;
+    background-color: yellow;
+}*/
+
+/*
+p {
+    width: 30
+}
+*/

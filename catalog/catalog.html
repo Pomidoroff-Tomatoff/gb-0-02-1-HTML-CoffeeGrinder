@@ -7,76 +7,95 @@
         <link rel="stylesheet" type="text/css" href="../css/style.css"> </head>
 
     <body>
-<!--
-        Шапка с меню и картинкой.
-        Шапка: картинка
--->
-        <header class=CoffeeBeen-Header id="idMainMenu">
-            <nav class=CofeeBeen-Menu> &nbsp; &nbsp;
-                <a href="../index.html"> &nbsp;Главная </a> &nbsp;
-                <a href="catalog.html">&nbsp;Каталог </a> &nbsp;
-                <a href="../contacts.html"> &nbsp;Контакты </a> &nbsp;
-            </nav>
-        </header>
-<!-- 
-        Строка навигации
--->
-        <a href="../index.html">главная</a>
-        &rarr;
-        каталог
-        &rarr;
-<!--
-        MAIN
--->
-        <h1>
-                Каталог: электрические кофемолки
-        </h1>
-<!-- 
-        Ссылки на учебные страницы по каждому товару
--->
-        <table>
-            <tr>
-                <td>
-                    <img src="img/DeLonghi_KG-79_20022012s.jpg" alt="DeLonghi KG-79">
-                </td>
-                <td>
-                    <a href="coffee_grinder_De_Longhi_KG_79.html"> Кофемолка De'Longhi KG-79 </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="img/Bosch_TSM6A014R_20062598s.jpg" alt="Bosch TSM6A014R">
-                </td>
-                <td>
-                    <a href="coffee_grinder_Bosch_TSM6A014R.html"> Кофемолка Bosch </a>
-                </td>
-                
-            </tr>
-        </table>
-        <br>        
+        <header class="flex-container-column" id="idHeader"> <!-- Шапка с меню и картинкой. -->
+            <div class="flex-container-row" id="idFlexBox-Logo-Menu-container"> <!-- БЛОК = ЛОГО + МЕНЮ -->
+                <div class="flex-item-row"  id="#"> <!-- ЛОГОТИП -->
+                    <div class="flex-item-row" id="idLogo">
+                            <a href="../index.html">
+                                <img src="../img/Logo-Coffee-Been.png" height="120px" alt="Coffee grinder">
+                            </a>                        
+                        
+                    </div>
+                </div>
+                   
+                <div class="flex-item-column" id="idFlexBox-Menu-container"> <!-- Меню-контейнеры -->
+                    <div class="flex-item-row" id="idFlexBox-MenuBox--2">
+                        <!-- Предполагаемая родительская группа меню -->
+                    </div>
+                    <div class="flex-item-row" id="idFlexBox-MenuBox--1">
+                        <div class="flex-item-row-Menu-item">
+                            <a href="../index.html">
+                                Главная 
+                            </a>
+                        </div>
+                        <div class="flex-item-row-Menu-item">
+                            <a href="catalog.html"> 
+                                Каталог 
+                            </a>
+                        </div>
+                        <div class="flex-item-row-Menu-item">
+                            <a href="../contacts.html"> 
+                                Контакты 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-container-row" id="idPath-Line"> <!-- БЛОК = МАРШРУТ -->
+                <span>
+                    <a href="../index.html"> главная &rarr; </a>
+                </span>
 
-<!--
-        Навигация наверх -- ссылка на себя же.
--->
-        <p align="right">
-            <a href="#idMainMenu">&#9650; <i>наверх</i></a>
-        </p>
-<!--
-        Подвал с авторскими правами и выходными данными
--->       
-        <footer>
-           <p>
-                &copy; &laquo;Кофейная мельница&raquo;, 2020
-                <br> 
-                <br>
-                <i> 
-                    <a href="https://geekbrains.ru/" target="_blank">GeekBrains</a><br>  
-                    <a href="https://geekbrains.ru/study_groups/12766/videos/73718" target="_blank">
-                        Курс HTML/CSS, задание к уроку-4
-                    </a><br>
-                    <a href="https://geekbrains.ru/users/3837199" target="_blank">GB-ID-3837199.</a> 
-                </i>
+                <span>
+                    &nbsp;контакты
+                </span>
+            </div>
+        </header>
+
+        <main> <!-- MAIN -->
+            <h1>
+                    Каталог: электрические кофемолки
+            </h1>
+    <!-- 
+            Ссылки на учебные страницы по каждому товару
+    -->
+           <div class="flex-container-row" style="flex-wrap: wrap; width: 100%;">
+                <div class="flex-item-column" style="flex-wrap: wrap; width: 200px; height: 300px; outline: 1px solid silver; padding: 20px; margin: 20px; background-color: white;">
+                   <img src="img/DeLonghi_KG-79_20022012b.jpg" alt="DeLonghi KG-79" width="150px;" style="margin 0 auto; order: -1; align-self: center;">
+                   <br>
+                   <p> <a href="coffee_grinder_De_Longhi_KG_79.html"> Кофемолка De'Longhi KG-79 </a></p>
+                   <button style="margin-top: auto;">BUY NOW</button>
+                </div>
+                
+                <div class="flex-item-column" style="flex-wrap: wrap; width: 200px; height: 300px; outline: 1px solid silver; padding: 20px; margin: 20px; background-color: white;">
+                   <img src="img/Bosch_TSM6A014R_20062598b.jpg" alt="Bosch TSM6A014R" width="150px;" style="margin 0 auto; order: -1; align-self: center;">
+                   <br>
+                   <p> <a href="coffee_grinder_Bosch_TSM6A014R.html" style="text-align: center;"> Кофемолка Bosch, ротационного типа. </a></p>
+                   <button style="margin-top: auto;">BUY NOW</button>
+                </div>
+           </div>
+           
+
+
+
+            <p align="right"> <!-- Навигация наверх -- ссылка на себя же. -->
+                <a href="#idHeader">&#9650; <i>наверх</i></a>
             </p>
+        </main>
+        
+        <footer class="flex-container-row" style="flex-direction: row-reverse;"> <!-- Подвал c адресом... -->
+            <div class="flex-item-column" style="width=200px;">
+                &copy; &laquo;Кофейная мельница&raquo;, 2020
+            </div>
+
+            <div class="flex-item-column">
+                <a href="https://geekbrains.ru/" target="_blank">GeekBrains</a>
+                <a href="https://geekbrains.ru/study_groups/12766/videos/73718" target="_blank">
+                    Курс HTML/CSS, задание к уроку-5
+                </a>
+                <a href="https://geekbrains.ru/users/3837199" target="_blank">GB-ID-3837199.</a> 
+            </div>
+
         </footer>
     </body>
 </html>

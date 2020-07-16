@@ -6,126 +6,148 @@
         <link rel="stylesheet" type="text/css" href="../css/style.css">
     </head>
     <body>
-<!--
-        Шапка с меню и картинкой.
-        Шапка: картинка
--->
-        <header class=CoffeeBeen-Header id="idMainMenu">
-            <nav class=CofeeBeen-Menu> &nbsp; &nbsp;
-                <a href="../index.html"> &nbsp;Главная </a> &nbsp;
-                <a href="catalog.html">&nbsp;Каталог </a> &nbsp;
-                <a href="../contacts.html"> &nbsp;Контакты </a> &nbsp;
-            </nav>
+    
+        <header class="flex-container-column" id="idHeader"> <!-- Шапка с меню и картинкой. -->
+            <div class="flex-container-row" id="idFlexBox-Logo-Menu-container"> <!-- БЛОК = ЛОГО + МЕНЮ -->
+                <div class="flex-item-row"  id="#"> <!-- ЛОГОТИП -->
+                    <div class="flex-item-row" id="idLogo">
+                            <a href="../index.html">
+                                <img src="../img/Logo-Coffee-Been.png" height="120px" alt="Coffee grinder">
+                            </a>                        
+                        
+                    </div>
+                </div>
+                   
+                <div class="flex-item-column" id="idFlexBox-Menu-container"> <!-- Меню-контейнеры -->
+                    <div class="flex-item-row" id="idFlexBox-MenuBox--2">
+                        <!-- Предполагаемая родительская группа меню -->
+                    </div>
+                    <div class="flex-item-row" id="idFlexBox-MenuBox--1">
+                        <div class="flex-item-row-Menu-item">
+                            <a href="../index.html">
+                                Главная 
+                            </a>
+                        </div>
+                        <div class="flex-item-row-Menu-item">
+                            <a href="catalog.html"> 
+                                Каталог 
+                            </a>
+                        </div>
+                        <div class="flex-item-row-Menu-item">
+                            <a href="../contacts.html"> 
+                                Контакты 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-container-row" id="idPath-Line"> <!-- БЛОК = МАРШРУТ -->
+                <span>
+                    <a href="../index.html"> главная &rarr; </a>
+                </span>
+                <span>
+                    <a href="catalog.html"> каталог &rarr; </a>
+                </span>
+        
+                <span>
+                    &nbsp;кофемолка De'Longi KG-79
+                </span>
+            </div>
         </header>
-<!-- 
-        Cтрока навигации
--->
-        <a href="../index.html">главная</a>
-        &rarr;
-        <a href="catalog.html"> каталог</a>
-        &rarr; 
-        кофемолка De'Longi
 
-<!--
-        MAIN
--->
-        
-        <h1 class="cofe_grinder">
-            Кофемолка De'Longhi KG-79
-        </h1>
+        <main> <!-- MAIN -->
+            <h1 class="cofe_grinder">
+                Кофемолка De'Longhi KG-79
+            </h1>
 
-        <a href="coffee_grinder_De_Longhi_KG_79_picture.html" target="_blank">
-            <img src="img/DeLonghi_KG-79.jpg" alt="DeLonghi_KG-79.jpg" class="main-picture">
-        </a>
+            <a href="coffee_grinder_De_Longhi_KG_79_picture.html" target="_blank">
+                <img src="img/DeLonghi_KG-79.jpg" alt="DeLonghi_KG-79.jpg" class="main-picture">
+            </a>
 
-        <h3>
-            Краткое описание товара
-        </h3>
-        
-        <p class="difinition-brief">
-            Кофемолка De'Longhi KG-79 использует для помола зерна стальные жернова, расстояние между которыми можно регулировать и, тем самым, задавать степень помола.
-        
-        </p>
-        
-        <h3>
-            Подробное описание товара
-        </h3>
-        
-        <p class="description-detailed">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur voluptatem iste illum. Ab illum voluptatum sint explicabo, laudantium eligendi, qui atque facere voluptas ratione similique amet adipisci! Nam quod laboriosam aliquid iusto, alias molestiae omnis nisi? Distinctio quis corrupti, saepe nobis quia totam dolor eum unde, dicta nulla ea? Assumenda modi natus dignissimos magnam ut dolor illo aut totam sit adipisci, cumque ipsum doloremque commodi hic earum quos quibusdam officia quam accusantium, possimus. Error officiis necessitatibus, sapiente sit veniam, esse.
-        </p>
-        
-        <h3>
-            Характеристики
-        </h3>
-        <ul class="description-parameters" style="list-style-image: url(img/coffee-mark.png)">
-            <li> Тип кофемолки: <mark>&nbsp;жерновая</mark> </li>
-            <li> Загрузка кофе в зёрнах: <mark>&nbsp;120 г</mark> </li>
-            <li> Степень помола: <mark>&nbsp;регулируется</mark> </li>
-            <li> Тип управления: <mark>&nbsp;таймер</mark></li>
-            <li> Безопасность: <mark>&nbsp;отключение при снятой крышке, при перегреве</mark> </li>
-            
-        </ul>
-        
-        <table class="description-parameter-table">
-            <tr> 
-                <th> Параметр </th>
-                <th> Значение </th>
-                <th> Ед. изм. </th>
-                <th> Пояснение </th>
-                <th> Рекомендации </th>
-            </tr>
-            <tr>
-                <td> Тип </td>
-                <td> жерновая </td>
-                <td> --- </td>
-                <td> Тип кофемолки </td>
-                <td> Использует ножи для размола зёрен </td>
-            </tr>
-            <tr>
-                <td> Загрузка </td>
-                <td> 120 </td>
-                <td> г </td>
-                <td colspan="2"> Загрузка кофе в зёрнах </td>
-                <td>  </td>
-            </tr>
-            <tr>
-                <td> Помол </td>
-                <td> 6 </td>
-                <td> степень </td>
-                <td> Степень помола </td>
-                <td rowspan="2"> Время помола определяется таймером (если я не ошибаюсь).   </td>
-            </tr>
-            <tr>
-                <td> Напряжение </td>
-                <td> 220 </td>
-                <td> В </td>
-                <td> Напряжение электросети </td>
-                <td>  </td>
-            </tr>
-        </table>
-<!--
-        Навигация наверх -- ссылка на себя же.
--->
-        <p align="right">
-            <a href="#idMainMenu">&#9650; <i>наверх</i></a>
-        </p>
-<!--
-        Подвал с авторскими правами и выходными данными
--->       
-        <footer>
-           <p>
-                &copy; &laquo;Кофейная мельница&raquo;, 2020
-                <br> 
-                <br>
-                <i> 
-                    <a href="https://geekbrains.ru/" target="_blank">GeekBrains</a><br>  
-                    <a href="https://geekbrains.ru/study_groups/12766/videos/73718" target="_blank">
-                        Курс HTML/CSS, задание к уроку-4
-                    </a><br>
-                    <a href="https://geekbrains.ru/users/3837199" target="_blank">GB-ID-3837199.</a> 
-                </i>
+            <h3>
+                Краткое описание товара
+            </h3>
+
+            <p class="difinition-brief">
+                Кофемолка De'Longhi KG-79 использует для помола зерна стальные жернова, расстояние между которыми можно регулировать и, тем самым, задавать степень помола.
+
             </p>
+
+            <h3>
+                Подробное описание товара
+            </h3>
+
+            <p class="description-detailed">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur voluptatem iste illum. Ab illum voluptatum sint explicabo, laudantium eligendi, qui atque facere voluptas ratione similique amet adipisci! Nam quod laboriosam aliquid iusto, alias molestiae omnis nisi? Distinctio quis corrupti, saepe nobis quia totam dolor eum unde, dicta nulla ea? Assumenda modi natus dignissimos magnam ut dolor illo aut totam sit adipisci, cumque ipsum doloremque commodi hic earum quos quibusdam officia quam accusantium, possimus. Error officiis necessitatibus, sapiente sit veniam, esse.
+            </p>
+
+            <h3>
+                Характеристики
+            </h3>
+            <ul class="description-parameters" style="list-style-image: url(img/coffee-mark.png)">
+                <li> Тип кофемолки: <mark>&nbsp;жерновая</mark> </li>
+                <li> Загрузка кофе в зёрнах: <mark>&nbsp;120 г</mark> </li>
+                <li> Степень помола: <mark>&nbsp;регулируется</mark> </li>
+                <li> Тип управления: <mark>&nbsp;таймер</mark></li>
+                <li> Безопасность: <mark>&nbsp;отключение при снятой крышке, при перегреве</mark> </li>
+
+            </ul>
+
+            <table class="description-parameter-table">
+                <tr> 
+                    <th> Параметр </th>
+                    <th> Значение </th>
+                    <th> Ед. изм. </th>
+                    <th> Пояснение </th>
+                    <th> Рекомендации </th>
+                </tr>
+                <tr>
+                    <td> Тип </td>
+                    <td> жерновая </td>
+                    <td> --- </td>
+                    <td> Тип кофемолки </td>
+                    <td> Использует ножи для размола зёрен </td>
+                </tr>
+                <tr>
+                    <td> Загрузка </td>
+                    <td> 120 </td>
+                    <td> г </td>
+                    <td colspan="2"> Загрузка кофе в зёрнах </td>
+                    <td>  </td>
+                </tr>
+                <tr>
+                    <td> Помол </td>
+                    <td> 6 </td>
+                    <td> степень </td>
+                    <td> Степень помола </td>
+                    <td rowspan="2"> Время помола определяется таймером (если я не ошибаюсь).   </td>
+                </tr>
+                <tr>
+                    <td> Напряжение </td>
+                    <td> 220 </td>
+                    <td> В </td>
+                    <td> Напряжение электросети </td>
+                    <td>  </td>
+                </tr>
+            </table>
+
+            <p align="right"> <!-- Навигация наверх -- ссылка на себя же. -->
+                <a href="#idHeader">&#9650; <i>наверх</i></a>
+            </p>
+        </main>
+        
+        <footer class="flex-container-row" style="flex-direction: row-reverse;"> <!-- Подвал c адресом... -->
+            <div class="flex-item-column" style="width=200px;">
+                &copy; &laquo;Кофейная мельница&raquo;, 2020
+            </div>
+
+            <div class="flex-item-column">
+                <a href="https://geekbrains.ru/" target="_blank">GeekBrains</a>
+                <a href="https://geekbrains.ru/study_groups/12766/videos/73718" target="_blank">
+                    Курс HTML/CSS, задание к уроку-5
+                </a>
+                <a href="https://geekbrains.ru/users/3837199" target="_blank">GB-ID-3837199.</a> 
+            </div>
         </footer>
     </body>
 </html>
