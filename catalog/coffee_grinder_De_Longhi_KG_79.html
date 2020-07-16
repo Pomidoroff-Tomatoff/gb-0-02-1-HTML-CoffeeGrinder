@@ -3,14 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <title> De'Longhi KG-79 </title>
-        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
 <!--
         Меню домашнего задания
 -->
-        <p>Меню:</p>
-        <ui class=menu>
+        <ui class=menu id="idMainMenu">
             <li><a href="../index.html">Главная</a></li>
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="../contacts.html">Контакты</a></li>
@@ -42,14 +41,14 @@
         </h1>
 
         <a href="coffee_grinder_De_Longhi_KG_79_picture.html" target="_blank">
-            <img src="img/DeLonghi_KG-79.jpg" alt="DeLonghi_KG-79.jpg">
+            <img src="img/DeLonghi_KG-79.jpg" alt="DeLonghi_KG-79.jpg" class="main-picture">
         </a>
 
         <h3>
             Краткое описание товара
         </h3>
         
-        <p class='short name'>
+        <p class="difinition-brief">
             Кофемолка De'Longhi KG-79 использует для помола зерна стальные жернова, расстояние между которыми можно регулировать и, тем самым, задавать степень помола.
         
         </p>
@@ -58,43 +57,46 @@
             Подробное описание товара
         </h3>
         
-        <p>
+        <p class="description-detailed">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur voluptatem iste illum. Ab illum voluptatum sint explicabo, laudantium eligendi, qui atque facere voluptas ratione similique amet adipisci! Nam quod laboriosam aliquid iusto, alias molestiae omnis nisi? Distinctio quis corrupti, saepe nobis quia totam dolor eum unde, dicta nulla ea? Assumenda modi natus dignissimos magnam ut dolor illo aut totam sit adipisci, cumque ipsum doloremque commodi hic earum quos quibusdam officia quam accusantium, possimus. Error officiis necessitatibus, sapiente sit veniam, esse.
         </p>
         
         <h3>
             Характеристики
         </h3>
-        <ul>
-            <li> Тип кофемолки: жерновая </li>
-            <li> Загрузка кофе в зёрнах: 120 г </li>
-            <li> Степень помола: регулируется </li>
-            <li> Тип управления: таймер </li>
-            <li> Безопасность: отключение при снятой крышке, при перегреве </li>
+        <ul class="description-parameters" style="list-style-image: url(img/coffee-mark.png)">
+            <li> Тип кофемолки: <mark>&nbsp;жерновая</mark> </li>
+            <li> Загрузка кофе в зёрнах: <mark>&nbsp;120 г</mark> </li>
+            <li> Степень помола: <mark>&nbsp;регулируется</mark> </li>
+            <li> Тип управления: <mark>&nbsp;таймер</mark></li>
+            <li> Безопасность: <mark>&nbsp;отключение при снятой крышке, при перегреве</mark> </li>
             
         </ul>
         <p></p>
 <!--
         Навигация наверх -- ссылка на себя же.
 -->       
-        <a href="coffee_grinder_De_Longhi_KG_79.html">&#9650; <i>наверх</i></a>
+        <a href="#idMainMenu">&#9650; <i>наверх</i></a>
         <br>        
 <!--
         Подвал с авторскими правами и выходными данными
 -->       
-        <br>
-        <hr>
-
-        <p>
-            Все права защищены &copy; &laquo;Кофейная мельница&raquo;, 2020
-            <br> 
+        <footer>
             <br>
-            <i> 
-                <a href="https://geekbrains.ru/" target="_blank">GeekBrains</a><br>  
-                <a href="https://geekbrains.ru/study_groups/12766" target="_blank">Курс HTML/CSS, задание к уроку-2</a><br>
-                <a href="https://geekbrains.ru/users/3837199" target="_blank">GB-ID-3837199.</a> 
-            </i>
-        </p>
+            <hr>
+            <p>
+                &copy; &laquo;Кофейная мельница&raquo;, 2020
+                <br> 
+                <br>
+                <i> 
+                    <a href="https://geekbrains.ru/" target="_blank">GeekBrains</a><br>  
+                    <a href="https://geekbrains.ru/study_groups/12766/videos/73718" target="_blank">
+                        Курс HTML/CSS, задание к уроку-3
+                    </a><br>
+                    <a href="https://geekbrains.ru/users/3837199" target="_blank">GB-ID-3837199.</a> 
+                </i>
+            </p>
+        </footer>
     </body>
 </html>
 

@@ -4,14 +4,14 @@
     <head>
         <meta charset="UTF-8">
         <title> Каталог кофемолок </title>
-        <link rel="stylesheet" href="../main.css"> </head>
+        <link rel="stylesheet" href="../css/style.css"> </head>
 
     <body>
 <!--
         Меню домашнего задания
--->
         <p>Меню:</p>
-        <ui class=menu>
+-->
+        <ui class=menu id="idMainMenu">
             <li><a href="../index.html">Главная</a></li>
             <li><a href="catalog/catalog.html">Каталог</a></li>
             <li><a href="../contacts.html">Контакты</a></li>
@@ -25,7 +25,7 @@
             <img src="../img/topHeader_coffee-beans.jpg">
         </a><br>
 <!-- 
-        Меню: строка навигации
+        Строка навигации
 -->
         <a href="../index.html">главная</a>
         &rarr;
@@ -63,27 +63,30 @@
 
 <!--
         Навигация наверх -- ссылка на себя же.
-
-        <a href="catalog.html">&#9650; <i>наверх</i></a>
-        <br>
 -->
+        <br>       
+        <a href="#idMainMenu">&#9650; <i>наверх</i></a>
+        <br>
+
 <!--
         Подвал с авторскими правами и выходными данными
 -->       
-        <br>
-        <hr>
-
-        <p>
-            <a href="../contacts.html">Контакты</a><br><br>
-            Все права защищены &copy; &laquo;Кофейная мельница&raquo;, 2020
-            <br> 
+        <footer>
             <br>
-            <i> 
-                <a href="https://geekbrains.ru/" target="_blank">GeekBrains</a><br>  
-                <a href="https://geekbrains.ru/study_groups/12766" target="_blank">Курс HTML/CSS, задание к уроку-2</a><br>
-                <a href="https://geekbrains.ru/users/3837199" target="_blank">GB-ID-3837199.</a> 
-            </i>
-        </p>
+            <hr>
+            <p>
+                &copy; &laquo;Кофейная мельница&raquo;, 2020
+                <br> 
+                <br>
+                <i> 
+                    <a href="https://geekbrains.ru/" target="_blank">GeekBrains</a><br>  
+                    <a href="https://geekbrains.ru/study_groups/12766/videos/73718" target="_blank">
+                        Курс HTML/CSS, задание к уроку-3
+                    </a><br>
+                    <a href="https://geekbrains.ru/users/3837199" target="_blank">GB-ID-3837199.</a> 
+                </i>
+            </p>
+        </footer>
     </body>
 </html>
 <!--

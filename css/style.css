@@ -1,0 +1,90 @@
+html {
+    background-color: rgb(230, 218, 200);
+} 
+
+body {
+    background-color: #f8f8f8;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/*
+    ЗАГОЛОВКИ
+*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: left;
+}
+h1 {
+    color: rgb(94, 3, 3);
+} 
+h2, h3, h4, h5, h6 {
+    color: black;
+}
+h3{
+    font-size: 18 px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+
+.difinition-brief{
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+.description-detailed{
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.description-parameters {
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+}
+.description-parameters li mark{
+    background-color: inherit;
+    font-style: italic;
+    letter-spacing: 0.4px;
+/*    font-weight: 500; */
+}
+
+.main-picture {
+    outline-color: silver;
+    outline-width: 2px;
+    outline-style: solid;
+/*    border-color: silver;
+    border-width: 2px; 
+    border-style: solid;
+    border-image: none; */
+}
+.field-help-text {
+    font-style: italic;
+    font-size: 16px;
+    font-kerning: normal;
+    font-family: "Times New Roman", serif, Verdana;
+    /* height: 35px; */
+}
+
+
+/* 
+    МЕНЮ 
+*/
+.menu li{
+    font-size: 20px;
+    font-family: monospace;
+    list-style-type: none;
+}
+.menu a{
+    font-style: normal;
+    text-decoration: none;
+    background-color: rgb(247, 203, 203);
+    color: rgb(94, 3, 3);
+}
+
+

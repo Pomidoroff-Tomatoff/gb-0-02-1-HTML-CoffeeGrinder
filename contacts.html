@@ -4,14 +4,13 @@
     <head>
         <meta charset="UTF-8">
         <title> Контакты </title>
-        <link rel="stylesheet" href="main.css"> </head>
+        <link rel="stylesheet" href="css/style.css"> </head>
 
     <body>
 <!--
         Меню домашнего задания
 -->
-        <p>Меню:</p>
-        <ui class=menu>
+        <ui class=menu id="idMainMenu">
             <li><a href="index.html">Главная</a></li>
             <li><a href="catalog/catalog.html">Каталог</a></li>
             <li><a href="contacts.html">Контакты</a></li>
@@ -45,17 +44,53 @@
             Форма обратной связи
         </h3>
         
-        <fieldset>
+        <fieldset style="border-color: yellow;">
         <legend>Ваш отзыв</legend>
         <form action="#">
+            <table>
+                <tr>
+                    <td width="55em"></td> <td></td>
+                </tr>
+                <tr>
+                    <td>Имя</td> 
+                    <td><input type="text" placeholder="&nbsp;&nbsp;ваше имя" size="35" required class="field-help-text"></td>
+                </tr>
+                <tr>
+                    <td>eMail</td> 
+                    <td><input type="email" placeholder="&nbsp;&nbsp;ваша электроонная почта" size="35" required class="field-help-text"></td>
+                </tr>
+            </table>
             <br>
-            Имя <input type="text" placeholder="ваше имя" required> <br><br>
-            eMail <input type="email" placeholder="ваша электроонная почта" required> <br><br>
-            <input type="radio" name="quality_service" checked> магазин понравился <br>
-            <input type="radio" name="quality_service"> не очень <br>
-            <br><br>
-            <input type="submit" value="Отправить отзыв">
+            <table>
+                <tr>
+                    <td>Оцените качество магазина</td><td></td>
+                </tr>
+                <tr>
+                    <td>&mdash;&nbsp;понравился</td> <td><input type="radio" name="quality_service" checked></td>
+                </tr>
+                <tr>
+                    <td>&mdash;&nbsp;не очень</td> <td><input type="radio" name="quality_service"></td>
+                </tr>
+
+            </table>
             <br>
+            <table>
+                <tr>
+                    <td>Ваши предложения</td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea rows="5" cols="37" placeholder="&nbsp;укажите свои пожелания"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr> 
+                    <td width=200em><input type="submit" value="Отправить отзыв"></td>
+                    <td><input type="reset" value="очистить" > </td>
+                </tr>
+            </table>
         </form>
         </fieldset>
         <br>
@@ -67,29 +102,32 @@
         
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A15afa833c746644fd59d92c90868f7308fefc2f01122ad4d6ce54ed0bcffe0df&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
                
-        <br>
 <!--
         Навигация наверх -- ссылка на себя же.
-
-        <a href="contacts.html">&#9650; <i>наверх</i></a>
-        <br>
 -->
-        <!--
-            Подвал с авторскими правами и выходными данными
-        -->       
         <br>
-        <hr>
+        <a href="#idMainMenu">&#9650; <i>наверх</i></a>
+        <br>
 
-        <p>
-            Все права защищены &copy; &laquo;Кофейная мельница&raquo;, 2020
-            <br> 
+<!--
+        Подвал с авторскими правами и выходными данными
+-->       
+        <footer>
             <br>
-            <i> 
-                <a href="https://geekbrains.ru/" target="_blank">GeekBrains</a><br>  
-                <a href="https://geekbrains.ru/study_groups/12766" target="_blank">Курс HTML/CSS, задание к уроку-2</a><br>
-                <a href="https://geekbrains.ru/users/3837199" target="_blank">GB-ID-3837199.</a> 
-            </i>
-        </p>
+            <hr>
+            <p>
+                &copy; &laquo;Кофейная мельница&raquo;, 2020
+                <br> 
+                <br>
+                <i> 
+                    <a href="https://geekbrains.ru/" target="_blank">GeekBrains</a><br>  
+                    <a href="https://geekbrains.ru/study_groups/12766/videos/73718" target="_blank">
+                        Курс HTML/CSS, задание к уроку-3
+                    </a><br>
+                    <a href="https://geekbrains.ru/users/3837199" target="_blank">GB-ID-3837199.</a> 
+                </i>
+            </p>
+        </footer>
     </body>
 </html>
 <!--
