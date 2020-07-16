@@ -4,37 +4,26 @@
     <head>
         <meta charset="UTF-8">
         <title> Койфейная мельница </title>
-        <link rel="stylesheet" href="css/style.css"> </head>
+        <link rel="stylesheet" type="text/css" href="css/style.css"> </head>
 
     <body>
 <!--
-        Меню домашнего задания
--->
-        <ui class=menu id="idMainMenu">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="catalog/catalog.html">Каталог</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ui>
-        <hr>
-<!-- 
-        Главная страница магазина
+        Шапка с меню и картинкой.
         Шапка: картинка
 -->
-        <a href="index.html">
-            <img src="img/topHeader_coffee-beans.jpg">
-        </a><br>
+        <header class=CoffeeBeen-Header id="idMainMenu">
+            <nav class=CofeeBeen-Menu> &nbsp; &nbsp;
+                <a href="index.html"> &nbsp;Главная </a> &nbsp;
+                <a href="catalog/catalog.html">&nbsp;Каталог </a> &nbsp;
+                <a href="contacts.html"> &nbsp;Контакты </a> &nbsp;
+            </nav>
+<!--         <p class=CofeeBeen-NavigationLine>главная &rarr; </p> -->
+        </header>
 <!-- 
-        Меню: строка навигации
+        навигационная строка
 -->
         главная
         &rarr;
-<!--
-        MAIN
-
-        <h3>
-           <nobr>Интернет-магазин</nobr> &laquo;Кофейная мельница&raquo;
-        </h3>
--->
         
 <!-- 
         Лозунг или слоган
@@ -45,61 +34,55 @@
             Назначение и виды кофемолок
         </h3>
         
-        <p> 
+        <p class=info>
             Электрическая кофемолка&nbsp;&mdash; компактное устройство, с&nbsp;помощью которого кофейные зерна превращаются в&nbsp;порошок. Все электрокофемолки делятся на две группы: 
         </p>
-        <ul>
+        <ul class=coffee-beans-list>
             <li>ротационные или ножевые</li>
             <li>жерновые</li>
         </ul>
         
-        <p> 
+        <p class=info> 
             Ротационные модели оборудуются ножами, установленными на дне ёмкости, в&nbsp;которую загружаются зёрна. Ножи, вращаясь, измельчают зёрна, причём на интенсивность влияет продолжительность процесса. Недостаток таких устройств&nbsp;&mdash; не&nbsp;очень равномерный помол. 
         </p>
         <p> 
             Жерновые кофемолки работают иначе. Зерна перетираются между жерновами, расстояние между которыми можно регулировать&nbsp;&mdash; от него зависит степень помола. 
         </p>
         <h3>Критерии выбора</h3>
-        <p> 
+        <p class=info> 
             На что обратить внимание при выборе электрокофемолки? Важные параметры: 
         </p>
-        <ul>
+        <ul class=coffee-beans-list>
             <li>объём загрузки зёрен </li>
             <li>возможность регулировать степень помола</li>
             <li>число степеней помола </li>
             <li>наличие резервуара для кофейного порошка </li>
         </ul>
         
-        <p>
+        <p class=info>
             В&nbsp;интернет-магазине &laquo;Кофейная мельница&raquo; вы можете купить электрические кофемолки по выгодной цене с&nbsp;доставкой по Москве и&nbsp;другим регионам России. В&nbsp;каталоге представлена продукция De'Longhi, Bosch, Bork, Vitek и&nbsp;других популярных торговых марок&hellip; 
         </p>
         
-        <h3>
-            <a href="catalog/catalog.html">
-                Каталог&hellip;
-            </a>
-        </h3>
+        <br>
         
 <!--
         Навигация наверх -- ссылка на себя же.
 -->
-        <a href="#idMainMenu">&#9650; <i>наверх</i></a>
-        <br>
-                
+        <p align="right">
+            <a href="#idMainMenu">&#9650; <i>наверх</i></a>
+        </p>
 <!--
         Подвал с авторскими правами и выходными данными
 -->       
         <footer>
-            <br>
-            <hr>
-            <p>
+           <p>
                 &copy; &laquo;Кофейная мельница&raquo;, 2020
                 <br> 
                 <br>
                 <i> 
                     <a href="https://geekbrains.ru/" target="_blank">GeekBrains</a><br>  
                     <a href="https://geekbrains.ru/study_groups/12766/videos/73718" target="_blank">
-                        Курс HTML/CSS, задание к уроку-3
+                        Курс HTML/CSS, задание к уроку-4
                     </a><br>
                     <a href="https://geekbrains.ru/users/3837199" target="_blank">GB-ID-3837199.</a> 
                 </i>

@@ -4,25 +4,21 @@
     <head>
         <meta charset="UTF-8">
         <title> Контакты </title>
-        <link rel="stylesheet" href="css/style.css"> </head>
+        <link rel="stylesheet" type="text/css" href="css/style.css"> </head>
 
     <body>
 <!--
-        Меню домашнего задания
--->
-        <ui class=menu id="idMainMenu">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="catalog/catalog.html">Каталог</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ui>
-        <hr>
-<!-- 
-        Главная страница магазина
+        Шапка с меню и картинкой.
         Шапка: картинка
 -->
-        <a href="index.html">
-            <img src="img/topHeader_coffee-beans.jpg">
-        </a><br>
+        <header class=CoffeeBeen-Header id="idMainMenu">
+            <nav class=CofeeBeen-Menu> &nbsp; &nbsp;
+                <a href="index.html"> &nbsp;Главная </a> &nbsp;
+                <a href="catalog/catalog.html">&nbsp;Каталог </a> &nbsp;
+                <a href="contacts.html"> &nbsp;Контакты </a> &nbsp;
+            </nav>
+<!--         <p class=CofeeBeen-NavigationLine>главная &rarr; </p> -->
+        </header>
 <!-- 
         Меню: строка навигации
 -->
@@ -80,7 +76,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <textarea rows="5" cols="37" placeholder="&nbsp;укажите свои пожелания"></textarea>
+                        <textarea rows="5" cols="37" placeholder="&nbsp;укажите свои пожелания" class="field-help-text"></textarea>
                     </td>
                 </tr>
             </table>
@@ -105,24 +101,21 @@
 <!--
         Навигация наверх -- ссылка на себя же.
 -->
-        <br>
-        <a href="#idMainMenu">&#9650; <i>наверх</i></a>
-        <br>
-
+        <p align="right">
+            <a href="#idMainMenu">&#9650; <i>наверх</i></a>
+        </p>
 <!--
         Подвал с авторскими правами и выходными данными
 -->       
         <footer>
-            <br>
-            <hr>
-            <p>
+           <p>
                 &copy; &laquo;Кофейная мельница&raquo;, 2020
                 <br> 
                 <br>
                 <i> 
                     <a href="https://geekbrains.ru/" target="_blank">GeekBrains</a><br>  
                     <a href="https://geekbrains.ru/study_groups/12766/videos/73718" target="_blank">
-                        Курс HTML/CSS, задание к уроку-3
+                        Курс HTML/CSS, задание к уроку-4
                     </a><br>
                     <a href="https://geekbrains.ru/users/3837199" target="_blank">GB-ID-3837199.</a> 
                 </i>

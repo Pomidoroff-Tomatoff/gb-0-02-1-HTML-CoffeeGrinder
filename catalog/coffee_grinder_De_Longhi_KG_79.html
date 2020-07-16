@@ -3,26 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <title> De'Longhi KG-79 </title>
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
     </head>
     <body>
 <!--
-        Меню домашнего задания
--->
-        <ui class=menu id="idMainMenu">
-            <li><a href="../index.html">Главная</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="../contacts.html">Контакты</a></li>
-        </ui>
-        <hr>
-<!-- 
-        Позиция каталога 
+        Шапка с меню и картинкой.
         Шапка: картинка
 -->
-        <a href="../index.html">
-            <img src="../img/topHeader_coffee-beans.jpg">
-        </a><br>
-    
+        <header class=CoffeeBeen-Header id="idMainMenu">
+            <nav class=CofeeBeen-Menu> &nbsp; &nbsp;
+                <a href="../index.html"> &nbsp;Главная </a> &nbsp;
+                <a href="catalog.html">&nbsp;Каталог </a> &nbsp;
+                <a href="../contacts.html"> &nbsp;Контакты </a> &nbsp;
+            </nav>
+        </header>
 <!-- 
         Cтрока навигации
 -->
@@ -72,26 +66,62 @@
             <li> Безопасность: <mark>&nbsp;отключение при снятой крышке, при перегреве</mark> </li>
             
         </ul>
-        <p></p>
+        
+        <table class="description-parameter-table">
+            <tr> 
+                <th> Параметр </th>
+                <th> Значение </th>
+                <th> Ед. изм. </th>
+                <th> Пояснение </th>
+                <th> Рекомендации </th>
+            </tr>
+            <tr>
+                <td> Тип </td>
+                <td> жерновая </td>
+                <td> --- </td>
+                <td> Тип кофемолки </td>
+                <td> Использует ножи для размола зёрен </td>
+            </tr>
+            <tr>
+                <td> Загрузка </td>
+                <td> 120 </td>
+                <td> г </td>
+                <td colspan="2"> Загрузка кофе в зёрнах </td>
+                <td>  </td>
+            </tr>
+            <tr>
+                <td> Помол </td>
+                <td> 6 </td>
+                <td> степень </td>
+                <td> Степень помола </td>
+                <td rowspan="2"> Время помола определяется таймером (если я не ошибаюсь).   </td>
+            </tr>
+            <tr>
+                <td> Напряжение </td>
+                <td> 220 </td>
+                <td> В </td>
+                <td> Напряжение электросети </td>
+                <td>  </td>
+            </tr>
+        </table>
 <!--
         Навигация наверх -- ссылка на себя же.
--->       
-        <a href="#idMainMenu">&#9650; <i>наверх</i></a>
-        <br>        
+-->
+        <p align="right">
+            <a href="#idMainMenu">&#9650; <i>наверх</i></a>
+        </p>
 <!--
         Подвал с авторскими правами и выходными данными
 -->       
         <footer>
-            <br>
-            <hr>
-            <p>
+           <p>
                 &copy; &laquo;Кофейная мельница&raquo;, 2020
                 <br> 
                 <br>
                 <i> 
                     <a href="https://geekbrains.ru/" target="_blank">GeekBrains</a><br>  
                     <a href="https://geekbrains.ru/study_groups/12766/videos/73718" target="_blank">
-                        Курс HTML/CSS, задание к уроку-3
+                        Курс HTML/CSS, задание к уроку-4
                     </a><br>
                     <a href="https://geekbrains.ru/users/3837199" target="_blank">GB-ID-3837199.</a> 
                 </i>

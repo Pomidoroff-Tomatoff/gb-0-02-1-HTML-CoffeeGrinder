@@ -1,12 +1,58 @@
 html {
     background-color: rgb(230, 218, 200);
 } 
-
 body {
     background-color: #f8f8f8;
     max-width: 1000px;
     margin: 0 auto;
     padding: 10px;
+}
+/*
+    СТРУКТУРА
+*/
+header.CoffeeBeen-Header{
+    background-image: url(../img/topHeader_coffee-beans.png);
+    background-repeat: no-repeat;
+    height: 180px;
+}
+nav.CofeeBeen-Menu {
+    height: 24px;
+    background-color: rgba(66, 33, 33, 0.9); /* задание цвета и прозрачности фона, только */
+    padding-top: 7px;
+}
+nav.CofeeBeen-Menu a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0.5px;
+    color: rgb(230, 218, 200);
+}
+nav.CofeeBeen-Menu a:hover {
+    color:  #4d2525;
+    background-color:  #ffcfcf;
+}
+nav.CofeeBeen-Menu a:active {
+    color:  #4d2525;
+    background-color:  white;
+}
+p.CofeeBeen-NavigationLine {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    height: 10px;
+    padding: 0px;
+    color: white;
+} 
+footer {
+    /* position: absolute;
+    bottom: 0; */
+    width: 100%;
+    background-color: white;
+    border-top: black;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: transparent;
+    border-width: 1px;
+    border-style: solid;
 }
 
 /*
@@ -28,11 +74,25 @@ h3{
     background-color: #eaeaea;
 }
 
+/*
+    БЛОКИ
+*/
+
+p.info{
+    line-height: 1.4em;
+}
+
 .difinition-brief{
     color: #707070;
     font-size: 14px;
     font-style: italic;
     line-height: 16px;
+}
+.difinition-brief:first-letter,.description-detailed:first-letter {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    font-style: bold;
+    color: tomato;
 }
 .description-detailed{
     color: #484343;
@@ -41,7 +101,6 @@ h3{
     line-height: 24px;
     text-align: left;
 }
-
 .description-parameters {
     font-size: 16px;
     line-height: 24px;
@@ -54,37 +113,71 @@ h3{
 /*    font-weight: 500; */
 }
 
+table.description-parameter-table{
+    border-collapse: separate;
+    border-width: 2px;
+    border-style: solid;
+    border-color: maroon;
+    border-spacing: 1px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.0em;
+}
+table.description-parameter-table tr:nth-child(2n+2){
+    background-color: rgb(240,240,240);
+}
+table.description-parameter-table th{
+    background-color: maroon;
+    color: sandybrown;
+    font-style: normal;
+    font-weight: normal;
+    height: 55px;
+}
+
+table.description-parameter-table td{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+ul.coffee-beans-list {
+    line-height: 1.4em;
+    font-size: 16px;
+    list-style-image: url(../img/coffee-mark.png);
+}
 .main-picture {
     outline-color: silver;
     outline-width: 2px;
     outline-style: solid;
-/*    border-color: silver;
-    border-width: 2px; 
-    border-style: solid;
-    border-image: none; */
+}
+.main-picture:hover {
+    outline-color: transparent;
 }
 .field-help-text {
     font-style: italic;
-    font-size: 16px;
+    font-size: 14px;
     font-kerning: normal;
-    font-family: "Times New Roman", serif, Verdana;
-    /* height: 35px; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    padding: 0.1em;
 }
-
-
-/* 
-    МЕНЮ 
-*/
-.menu li{
-    font-size: 20px;
-    font-family: monospace;
-    list-style-type: none;
+.field-help-text:focus {
+    background-color: cornsilk;
 }
-.menu a{
-    font-style: normal;
-    text-decoration: none;
-    background-color: rgb(247, 203, 203);
-    color: rgb(94, 3, 3);
+input[type="email"].field-help-text:focus {
+    color: red;
 }
-
-
+.field-help-text:valid {
+    background-color: white;
+}
+.field-help-text:invalid {
+    background-color:;
+}
+.field-help-text:disabled {
+    background-color: white;
+}
+textarea.field-help-text {
+    padding: 0.3em;
+}
+textarea.field-help-text:focus {
+    background-color: cornsilk;
+}
